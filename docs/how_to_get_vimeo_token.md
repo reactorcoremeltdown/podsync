@@ -9,8 +9,17 @@
 ![Generate an access token](img/vimeo_access_token.png)
 6. Click `Generate`.
 ![Tokens](img/vimeo_token.png)
-7. Copy a token to your CLI's configuration file.
+7. Copy a token to your CLI's configuration file or set it as an environment variable.
 ```toml
 [tokens]
 vimeo = "ecd4d34b07bcb9509ABCD"
+```
+Or set the environment variable:
+```sh
+export PODSYNC_VIMEO_API_KEY="ecd4d34b07bcb9509ABCD"
+```
+
+For API key rotation, you can specify multiple keys separated by spaces:
+```sh
+export PODSYNC_VIMEO_API_KEY="ecd4d34b07bcb9509ABCD fdc5e45c18cda0610EFGH"
 ```

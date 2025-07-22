@@ -15,9 +15,18 @@
 6. Click `Create credentials`.
 7. Select `API key`.
 ![Create API key](img/youtube_create_api_key.png)
-8. Copy token to your CLI's configuration file.
+8. Copy token to your CLI's configuration file or set it as an environment variable:
 ![Copy token](img/youtube_copy_token.png)
 ```toml
 [tokens]
 youtube = "AIzaSyD4w2s-k79YNR98ABC"
+```
+Or set the environment variable:
+```sh
+export PODSYNC_YOUTUBE_API_KEY="AIzaSyD4w2s-k79YNR98ABC"
+```
+
+For API key rotation, you can specify multiple keys separated by spaces:
+```sh
+export PODSYNC_YOUTUBE_API_KEY="AIzaSyD4w2s-k79YNR98ABC AIzaSyD4w2s-k79YNR98DEF"
 ```
